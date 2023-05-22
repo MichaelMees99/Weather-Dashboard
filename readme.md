@@ -1,4 +1,4 @@
-# Mike's Coding Quiz
+# Mike's Weather Dashboard
 
 ![Image of the main page of Weather Dashboard](/images/Screenshot%202023-05-21%20233833.png)
 
