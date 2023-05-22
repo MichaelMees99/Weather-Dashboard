@@ -31,7 +31,7 @@ $(document).ready(function() {
     }
 
     function getWeather(city) {
-        const queryUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+        const queryUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
         $.get(queryUrl).done(function(response) {
             const tempF = ((response.main.temp * 9/5) - 459.67).toFixed(0);
             const weatherCondition = getWeatherCondition(response.weather[0].main);
@@ -51,7 +51,7 @@ $(document).ready(function() {
     }
     
     function getForecast(city) {
-        const queryUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+        const queryUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
         $.get(queryUrl).done(function(response) {
             $("#forecast").empty();
             for (let i = 0; i < response.list.length; i++) {
